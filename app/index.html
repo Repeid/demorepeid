@@ -1,0 +1,123 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="bower_components/patternfly/dist/css/patternfly.css" />
+    <link rel="stylesheet" href="bower_components/patternfly/dist/css/patternfly-additions.css" />
+    <link rel="stylesheet" href="bower_components/angular-toastr/dist/angular-toastr.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-grid/ui-grid.css" />
+    <link rel="stylesheet" href="bower_components/angular-ui-select/dist/select.css" />
+    <link rel="stylesheet" href="bower_components/angular-patternfly/dist/styles/angular-patternfly.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <style>
+      [ng\:cloak],
+      [ng-cloak],
+      [x-ng-cloak],
+      .ng-cloak,
+      .x-ng-cloak {
+        display: none !important;
+      }
+    </style>
+  </head>
+  <body class="ng-cloak">
+    <!--[if lte IE 8]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- Add your site or application content here -->
+    <nav data-ng-include="'header.html'" class="navbar navbar-default navbar-pf"></nav>
+    <div class="container-fluid">
+      <section ui-view></section>
+    </div>
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+     <script>
+       !function(A,n,g,u,l,a,r){A.GoogleAnalyticsObject=l,A[l]=A[l]||function(){
+       (A[l].q=A[l].q||[]).push(arguments)},A[l].l=+new Date,a=n.createElement(g),
+       r=n.getElementsByTagName(g)[0],a.src=u,r.parentNode.insertBefore(a,r)
+       }(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+       ga('create', 'UA-XXXXX-X');
+       ga('send', 'pageview');
+    </script>
+
+    <!-- build:js(.) scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/jquery-ui/jquery-ui.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/patternfly/dist/js/patternfly.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
+    <script src="bower_components/angular-touch/angular-touch.js"></script>
+    <script src="bower_components/angular-messages/angular-messages.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-ui-utils/ui-utils.js"></script>
+    <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+    <script src="bower_components/angular-file-upload/dist/angular-file-upload.min.js"></script>
+    <script src="bower_components/angular-toastr/dist/angular-toastr.tpls.js"></script>
+    <script src="bower_components/angular-ui-grid/ui-grid.js"></script>
+    <script src="bower_components/angular-ui-select/dist/select.js"></script>
+    <script src="bower_components/lodash/dist/lodash.compat.js"></script>
+    <script src="bower_components/restangular/dist/restangular.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/angular-breadcrumb/release/angular-breadcrumb.js"></script>
+    <script src="bower_components/ng-file-upload/ng-file-upload.js"></script>
+    <script src="bower_components/angular-patternfly/dist/angular-patternfly.js"></script>
+    <script src="bower_components/restangular-repeid/dist/sg-persona.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp,app}) scripts/scripts.js -->
+    <script src="/scripts/config.js"></script>
+    <script src="/scripts/init.js"></script>
+    <script src="/modules/persona/persona.client.module.js"></script>
+    <script src="/modules/persona/config/persona.client.config.js"></script>
+    <script src="/modules/persona/config/persona.client.routes.js"></script>
+    <script src="/modules/persona/config/persona.client.sidebar.js"></script>
+    <script src="/modules/persona/controllers/persona.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona.util.date.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/buscar.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/crear.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/crear.datosprincipales.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/crear.representante.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/editar.accionistas.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/editar.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/editar.datosadicionales.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/editar.datosprincipales.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/editar.representante.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/juridica/editar.resumen.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/natural/buscar.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/natural/crear.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/natural/editar.cambiarfotomodal.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/natural/editar.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/natural/editar.datosadicionales.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/natural/editar.datosprincipales.client.controller.js"></script>
+    <script src="/modules/persona/controllers/persona/natural/editar.resumen.client.controller.js"></script>
+    <script src="/modules/persona/controllers/tipoDocumento/buscar.client.controller.js"></script>
+    <script src="/modules/persona/controllers/tipoDocumento/crear.client.controller.js"></script>
+    <script src="/modules/persona/controllers/tipoDocumento/editar.client.controller.js"></script>
+    <script src="/modules/persona/directives/persona.sgAbreviaturaTipoDocumentoValidate.client.directive.js"></script>
+    <script src="/modules/persona/directives/persona.sgDocumentoIdentidad.client.directive.js"></script>
+    <script src="/modules/persona/services/persona.client.service.js"></script>
+    <script src="/modules/persona/services/persona.menuItemsPersona.client.service.js"></script>
+    <script src="/scripts/config/header.js"></script>
+    <script src="/scripts/config/routes.js"></script>
+    <script src="/scripts/config/services.js"></script>
+    <script src="/scripts/controllers/about.js"></script>
+    <script src="/scripts/controllers/main.js"></script>
+    <!-- endbuild -->
+
+</body>
+</html>
