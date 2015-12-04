@@ -41,5 +41,5 @@ angular.element(document).ready(function () {
 /* jshint ignore:end */
 
 angular.module('mean').config(function (sgPersonaProvider) {
-  sgPersonaProvider.restUrl = 'http://localhost:8080/persona/rest';
+  sgPersonaProvider.restUrl = 'http://localhost:8080/repeid/rest';
 });
